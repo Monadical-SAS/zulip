@@ -297,12 +297,10 @@ li.show-more-topics {
     }
 }
 
-:not(.active-sub-filter) {
-    &.top_left_row:hover,
-    &.bottom_left_row:hover {
-        background-color: var(--color-background-hover-narrow-filter);
-        border-radius: 4px;
-    }
+.top_left_row:hover,
+.bottom_left_row:hover {
+    background-color: var(--color-background-hover-narrow-filter) !important;
+    border-radius: 4px;
 }
 
 #stream_filters .narrow-filter.highlighted_stream {
