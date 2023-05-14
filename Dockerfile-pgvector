@@ -47,3 +47,4 @@ WORKDIR /tmp/pgvector
 RUN make
 RUN make install # may need sudo
 WORKDIR /
+COPY scripts/setup/create-pgvector.sql /docker-entrypoint-initdb.d/zulip-create-pgvector.sql
